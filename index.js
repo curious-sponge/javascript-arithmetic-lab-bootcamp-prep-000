@@ -27,10 +27,10 @@ function makeInt(n){
 } 
 
 function preserveDecimal(n){
+  if(n != parseFloat(n)){
+    return NaN;
+  }
   return parseFloat(n);
 }
 
-function makeInt(n){
-  return parseInt(n, 10);
-}
 
